@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "ESNext",
+    "paths": {
+      "Comp/*": ["./components/*"],
+      "Cont/*": ["./containers/*"],
+      "Pages/*": ["./pages/*"],
+      "CComps/*": ["./commonComps/*"],
+      "Utils/*": ["./cUtils/*"],
+      "Others/*": ["./others/*"],
+      "Actions/*": ["./reduxActions/*"],
+      "Reducers/*": ["./reduxReducers/*"],
+      "@Reducers/*": ["./reduxReducers/*"],
+      "@Declarations": ["./declarations.d.ts"],
+      "Types/*": ["./reduxTypes/*"],
+      "Images/*": ["./public/images/*"]
+    }
+  }
+}

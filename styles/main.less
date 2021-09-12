@@ -1,0 +1,127 @@
+/*----------------------------------------VARIABLES-------------------------------------*/
+@font-face {
+  font-family: 'Questrial';
+  src: url('/fonts/Questrial/Questrial-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+//----------------------App------------------
+@colorPrimary: #ffa400;
+@colorPrimaryLigth: #ffba39;
+@colorPrimaryDark: #80461f;
+@colorPrimaryDarkLigth: #9b4e1b;
+@colorPrimaryDarkest: #3b2f27;
+@colorPrimaryDarkestLigth: #ffba39;
+@colorThree: #de6200;
+@colorThreeLigth: #c4651c;
+@colorFour: #474747;
+@colorFourLigth: #616161;
+@colorFive: #84e52a;
+@colorFiveLigth: #85cd42;
+@colorFiveLigthter: #c6e7a6;
+//----------------------Texts------------------
+@colorPrimaryText: #ffffff;
+@colorSecundaryText: #f2d9a6;
+@colorSecundaryTextLigth: #f5e0b8;
+//----------------------Colors------------------
+@colorWhite: #ffffff;
+@colorLight: #ffffff;
+@colorLightDark: #cccccc;
+@colorDark: #474747;
+@colorDarkLigth: #6e6d6d;
+@colorDarkLighter: #727272cc;
+@simpleColorYellow: #ffcc5e;
+@simpleColorGreen: #3ab415;
+//----------------------Specials------------------
+//---Nav
+@colorNavLogo: @colorLight;
+@colorNavButtons: @colorThree;
+@colorNavButtonsLigth: @colorThreeLigth;
+@colorNavNavButtonsText: @colorLight;
+//---Footer
+@colorFooterBackground: @colorFour;
+@colorFooterBackText: @colorPrimaryText;
+@colorFooterTitles: @colorThree;
+//---Backgrounds
+@backgroundFallBack1: #e2e2e2;
+@backgroundImage1: url(/images/background.jpg);
+//---Others
+@colorSuccess: #3ab415;
+@colorSuccessLigth: #56d42f;
+@colorError: #ff4d4f;
+@colorErrorLigth: #e46769;
+/*----------------------------------------TEMA-------------------------------------*/
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  }
+
+  html,
+  body {
+    background-color: @backgroundFallBack1;
+    background: @backgroundImage1 no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Questrial';
+    margin: 0px;
+    padding: 0px;
+  }
+  p{
+    color: @colorSecundaryText;
+    font-size: 22px;
+    text-align: center;
+  span{
+    color: @colorPrimaryText;
+    font-size: 26px;
+  }
+  }
+  .center-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .col-vertical-align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  }
+  .text-green{
+  color: @simpleColorGreen;
+  }
+  .text-yellow{
+  color: @simpleColorYellow
+  }
+  .error-mid-mssg{
+  color: @colorError;
+  font-size: 18px;
+  }
+  .modal-title{
+  color: @colorError;
+  }
+  .modal-message{
+  font-size: 18px;
+  }
+  .container94{
+  width: 94%;
+  margin: 10px 3% 10px 3%;
+  
+  }
+/*----------------------------------------HOME-------------------------------------*/
+.home-container{
+  text-align: center;
+  color: #3b3b3b;
+}
+.home-container img{
+  border-radius: 50%;
+}
+.home-container h1{
+  color: @colorPrimary;
+}
