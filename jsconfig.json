@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "module": "ESNext",
     "paths": {
       "Comp/*": ["./components/*"],
@@ -9,11 +9,12 @@
       "CComps/*": ["./commonComps/*"],
       "Utils/*": ["./cUtils/*"],
       "Others/*": ["./others/*"],
-      "Actions/*": ["./reduxActions/*"],
-      "Reducers/*": ["./reduxReducers/*"],
-      "@Reducers/*": ["./reduxReducers/*"],
+      "Actions/*": ["./redux/actions/*"],
+      "@Reducers/*": ["./redux/reducers/*"],
+      "@Redux/*": ["./redux/*"],
       "@Declarations": ["./declarations.d.ts"],
-      "Types/*": ["./reduxTypes/*"],
+      "Reducers": ["./redux/reducers"],
+      "Types": ["./redux/types.ts"],
       "Images/*": ["./public/images/*"]
     }
   }

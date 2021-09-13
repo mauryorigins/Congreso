@@ -35,7 +35,14 @@
           }
     },
     "rules": {
+        // Javascript
+        "no-use-before-define": "off",
+
+        // Typescript
         "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": true, "variables": true }],
+        "import/extensions": [ "error", "ignorePackages", { "ts": "never", "tsx": "never"}],
         "react/jsx-filename-extension": [ 1, { "extensions": [".js", ".jsx", ".ts", ".tsx"]}]
     }
 }

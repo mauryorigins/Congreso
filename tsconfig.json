@@ -43,19 +43,20 @@
         "./others/*"
       ],
       "Actions/*": [
-        "./reduxActions/*"
+        "./redux/actions/*"
       ],
       "@Reducers/*": [
-        "./reduxReducers/*"
+        "./redux/reducers/*"
       ],
+      "@Redux/*": ["./redux/*"],
       "@Declarations": [
         "./declarations.d.ts"
       ],
       "Reducers": [
-        "./reduxReducers"
+        "./redux/reducers"
       ],
       "Types": [
-        "./reduxTypes"
+        "./redux/types.ts"
       ],
       "Images/*": ["./public/images/*"]
     }

@@ -1,14 +1,14 @@
 // ---Dependencys
-import { ReactElement } from 'react'
+import { ReactElement } from 'react';
 // ---Types
 import { AppProps } from 'next/app';
 // ---Containers
 import NavbarCont from 'Cont/NavbarCont';
 // ---Others
 import 'antd/dist/antd.less';
-import "../styles/main.less";
+import '../styles/main.less';
 // ---Redux
-import { wrapper } from 'store';
+import { wrapper } from '@Redux/store';
 
 function App({ Component, pageProps }: AppProps): ReactElement {
   return (
@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps): ReactElement {
       <NavbarCont />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default wrapper.withRedux(App)
+export default wrapper.withRedux(App);

@@ -1,12 +1,12 @@
 // ---Dependencys
 import React, { useEffect } from 'react';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 // ---Redux
 import { useSelector, useDispatch } from 'react-redux';
 import {
   changeResponsiveFlag,
   updatePath,
-  updateParams
+  updateParams,
 } from 'Actions/appInfo';
 import { ReduxState } from 'Reducers';
 // ---Components
@@ -15,8 +15,8 @@ import GlobalComponents from 'Comp/NavBar/GlobalComponents';
 import isMovilDetector from 'Others/isMovilDetector';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function NavbarCont () {
-  const { pathname: currentPath, query: urlParams } = useRouter()
+export default function NavbarCont() {
+  const { pathname: currentPath, query: urlParams } = useRouter();
   // Redux States
   const { isMovil } = useSelector((reducers: ReduxState) => reducers.appInfoReducer);
   // Redux Actions
@@ -25,13 +25,13 @@ export default function NavbarCont () {
   const updateCurrentPath = () => dispatchR(updatePath(currentPath));
   const updateCurrentParams = () => dispatchR(updateParams(urlParams));
 
-  const responsiveData =  isMovilDetector();
+  const responsiveData = isMovilDetector();
   useEffect(() => {
     updateResponsiveData(responsiveData);
   }, [responsiveData]);
 
-  useEffect(() => { updateCurrentPath() }, [currentPath]);
-  useEffect(() => { updateCurrentParams() }, [urlParams]);
+  useEffect(() => { updateCurrentPath(); }, [currentPath]);
+  useEffect(() => { updateCurrentParams(); }, [urlParams]);
 
   return (
     <>
@@ -39,4 +39,4 @@ export default function NavbarCont () {
       <GlobalComponents />
     </>
   );
-};
+}
