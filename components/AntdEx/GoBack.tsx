@@ -8,7 +8,7 @@ export default function GoBack(): ReactElement {
       <section>
         <h2>
           <Link href="/">
-            <a>To home...</a>
+            <a>← Back to home...</a>
           </Link>
         </h2>
       </section>

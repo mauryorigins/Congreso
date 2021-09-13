@@ -5,6 +5,16 @@ import rootReducer from '@Reducers/index'
 
 const middleware = [thunk]
 
-const makeStore = () => createStore(rootReducer, compose(applyMiddleware(...middleware)))
+// ---Redux DevTools
+let composeEnhancers = compose
+if (typeof window !== 'undefined') {
+  if (process.env.NODE_ENV === 'development') {
+    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  }
+}
+
+
+// ---Redux configuration
+const makeStore = () => createStore(rootReducer, composeEnhancers(applyMiddleware(...middleware)))
 
 export const wrapper = createWrapper(makeStore as unknown as  MakeStore<Store<any, AnyAction>> )

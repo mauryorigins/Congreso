@@ -1,13 +1,13 @@
 // ---Dependencys
 import { ReactElement } from 'react'
 // ---Components
-import ToggleStuff from 'Comp/ImageExCont/ToggleStuff'
-import GoBack from 'components/ImageExCont/GoBack'
+import ToggleStuff from 'Comp/AntdEx/ToggleStuff'
+import GoBack from 'Comp/AntdEx/GoBack'
 
 // ----------------------------------------COMPONENT----------------------------------------
-export default function ImageExCont(): ReactElement {
+export default function AntdEx(): ReactElement {
     return(
-      <div className="imagePage-container">
+      <div className="antdEx-container">
         <ToggleStuff />
         <GoBack />
       </div>

@@ -6,7 +6,7 @@ import {
   UPDATE_LOADING,
 } from 'Types';
 import { Dispatch } from 'redux'
-
+import { RandObj } from '@Declarations'
 // -------------------------------------------ACTIONS------------------------------------
 export const changeResponsiveFlag = (newFlag: boolean) => (dispatch: Dispatch) : void => {
   dispatch({
@@ -22,7 +22,7 @@ export const updatePath = (newPath: string) => (dispatch: Dispatch) : void => {
   });
 };
 
-export const updateParams = (newParam: string) => (dispatch: Dispatch) : void => {
+export const updateParams = (newParam: RandObj) => (dispatch: Dispatch) : void => {
   dispatch({
     type: UPDATE_PARAMS,
     payload: newParam

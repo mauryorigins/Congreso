@@ -75,11 +75,12 @@ button, input[type="submit"], input[type="reset"] {
   }
   p{
     color: @colorSecundaryText;
-    font-size: 22px;
-    text-align: center;
+    font-size: 18px;
   span{
     color: @colorPrimaryText;
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px 3px 0px 3px;
   }
   }
   .center-block{
@@ -114,6 +115,42 @@ button, input[type="submit"], input[type="reset"] {
   margin: 10px 3% 10px 3%;
   
   }
+//----------------------------------------------Nav-----------------------------------------------
+.nav-div{
+  width: 100%;
+  margin-bottom: 35px;
+}
+.to-home{
+  display: block;
+  margin: 10px auto 10px auto ;
+  text-align: center;
+  width: 170px;
+  color: @colorNavLogo;
+  font-size: 30px;
+  cursor: pointer;
+  span{
+    font-size: 14px;
+  }
+}
+.nav-btn{
+  width: 98%;
+  background-color: @colorNavButtons;
+  margin: 10px auto 10px auto ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: @colorNavNavButtonsText;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover{
+    background-color: @colorNavButtonsLigth;
+  }
+}
+.nav-border{
+  outline: @colorNavNavButtonsText solid 1px;
+}
 /*----------------------------------------HOME-------------------------------------*/
 .home-container{
   text-align: center;
@@ -124,4 +161,30 @@ button, input[type="submit"], input[type="reset"] {
 }
 .home-container h1{
   color: @colorPrimary;
+}
+/*----------------------------------------ANTD-EX-------------------------------------*/
+.antdEx-container{
+  width: 94%;
+  margin: 0px auto 0px auto;
+  padding: 25px;
+  background-color: rgba(100, 100, 100, 0.507);
+  button{
+    margin: 30px;
+  }
+}
+/*----------------------------------------REDUX-EX-------------------------------------*/
+.reduxEx-container{
+  width: 94%;
+  margin: 0px auto 0px auto;
+  padding: 25px;
+  background-color: rgba(100, 100, 100, 0.507);
+  p{
+    color: @colorPrimaryText;
+    strong{
+      color: @colorSecundaryText;
+    }
+  }
+  pre{
+    color: @colorSecundaryText;
+  }
 }

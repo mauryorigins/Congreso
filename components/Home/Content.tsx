@@ -12,8 +12,8 @@ export default function Content(): ReactElement {
           Awesome developer playing with <strong>next js</strong>, having fun so far...
         </p>
         <h2>
-          <Link href="/ImageExPage">
-            <a>To ImageEx</a>
+          <Link href="/AntdExPage">
+            <a>To AntdEx</a>
           </Link>
         </h2>
       </section>

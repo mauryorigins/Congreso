@@ -2,16 +2,16 @@
 import { ReactElement } from 'react'
 import Head from 'next/head'
 // ---Components
-import ImageExCont from 'Cont/ImageExCont';
+import AntdEx from 'Cont/AntdEx';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function ImageExPage (): ReactElement {
+export default function AntdExPage (): ReactElement {
   return (
     <>
       <Head>
-        <title>Ejemplo con imagen</title>
+        <title>ANTD Example</title>
       </Head>
-      <ImageExCont />
+      <AntdEx />
     </>
   );
 }

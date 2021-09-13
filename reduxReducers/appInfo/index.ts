@@ -6,17 +6,18 @@ import {
   UPDATE_LOADING
 } from 'Types';
 import { Action, ReducerState } from '@Reducers/appInfo/customTypes';
+import { RandObj } from '@Declarations';
 
 // -------------------------------------------STATE------------------------------------
 const INITIAL_STATE = {
   isMovil: false,
   isLoading: false,
   currentPath: '',
-  currentParams: ''
+  currentParams: {}
 };
 
 // ------------------------------------------REDUCER-----------------------------------
-export default (state = INITIAL_STATE, action: Action) : ReducerState => {
+const reducer = (state = INITIAL_STATE, action: Action) : ReducerState => {
   const { type, payload } = action;
   switch (type) {
     case CHANGE_RESPONSIVE:
@@ -34,7 +35,7 @@ export default (state = INITIAL_STATE, action: Action) : ReducerState => {
     case UPDATE_PARAMS:
       return {
         ...state,
-        currentParams: <string>payload
+        currentParams: <RandObj>payload
       };
 
     case UPDATE_LOADING:
@@ -47,3 +48,5 @@ export default (state = INITIAL_STATE, action: Action) : ReducerState => {
       return state;
   }
 };
+
+export default reducer;
