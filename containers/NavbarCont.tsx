@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   changeResponsiveFlag,
   updatePath,
-  updateParams,
+  updateParams
 } from 'Actions/appInfo';
 import { ReduxState } from 'Reducers';
 // ---Components

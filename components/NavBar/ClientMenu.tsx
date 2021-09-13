@@ -1,7 +1,7 @@
 // ---Dependencys
 import React, { useState, ReactElement } from 'react';
 import { MenuFoldOutlined, MenuOutlined } from '@ant-design/icons';
-import Link from "next/link";
+import Link from 'next/link';
 import { Row, Col } from 'antd';
 // ---Others
 import { appConfig } from 'Others/store-config';
@@ -19,7 +19,7 @@ function JustButtons(props: AuxProps1) {
           <div
             className={currentPath === '/' ? 'nav-btn nav-border' : 'nav-btn'}
           >
-            Inicio
+            Home
           </div>
         </Link>
       </Col>
@@ -62,13 +62,13 @@ function ClientMenu(props: Props) : ReactElement {
   function changeMenuVisibility() {
     setMenuVisible(!menuVisible);
   }
-  if (isMovil)
+  if (isMovil) {
     return (
       <Row className="nav-div">
         <Col xs={24} sm={24} lg={8}>
-          <Link href="/">
+          <Link href="/" passHref>
             <div className="to-home">
-              <a>
+              <a href="replace">
                 <img src={logo} alt="Shelly" width="100%" />
               </a>
             </div>
@@ -91,6 +91,7 @@ function ClientMenu(props: Props) : ReactElement {
         </Col>
       </Row>
     );
+  }
   return (
     <Row className="nav-div">
       <Col xs={24} sm={24} lg={8}>
@@ -110,4 +111,3 @@ function ClientMenu(props: Props) : ReactElement {
 }
 
 export default ClientMenu;
-

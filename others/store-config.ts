@@ -13,7 +13,7 @@ export const ownerData = {
   contactLink: 'http://m.me/SHELLYstore.boot',
   instagramUrl: 'https://www.instagram.com/',
   aclaracionPedido: 'https://www.facebook.com/'
-}
+};
 
 export const appConfig = {
   productsURL: 'categoria=Todos',
@@ -39,4 +39,4 @@ export const appConfig = {
       value: 'Sublimado'
     }
   ]
-}
+};

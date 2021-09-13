@@ -58,7 +58,8 @@
       "Types": [
         "./redux/types.ts"
       ],
-      "Images/*": ["./public/images/*"]
+      "Images/*": ["./public/images/*"],
+      "Styles/*": ["./public/styles/*"]
     }
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,

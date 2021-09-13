@@ -1,11 +1,11 @@
 // ---Dependencys
-import { ReactElement } from 'react'
-import Head from 'next/head'
+import { ReactElement } from 'react';
+import Head from 'next/head';
 // ---Components
 import AntdEx from 'Cont/AntdEx';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function AntdExPage (): ReactElement {
+export default function AntdExPage(): ReactElement {
   return (
     <>
       <Head>

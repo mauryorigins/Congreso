@@ -12,6 +12,7 @@ export default function AntdEx(): ReactElement {
     <div className="reduxEx-container">
       <p>
         Data displayed from
+        {' '}
         <strong>Redux</strong>
       </p>
       <p>

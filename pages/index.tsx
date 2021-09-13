@@ -1,10 +1,10 @@
 // ---Dependencys
-import { ReactElement } from 'react'
-import Head from 'next/head'
+import { ReactElement } from 'react';
+import Head from 'next/head';
 // ---Components
 import Home from 'containers/Home';
 
-export default function HomePage(): ReactElement{
+export default function HomePage(): ReactElement {
   return (
     <>
       <Head>
@@ -12,5 +12,5 @@ export default function HomePage(): ReactElement{
       </Head>
       <Home />
     </>
-  )
+  );
 }

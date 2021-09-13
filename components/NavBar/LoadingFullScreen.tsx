@@ -7,15 +7,16 @@ interface Props {
   isLoading: boolean;
 }
 // ------------------------------------------ COMPONENT-----------------------------------------
-function LoadingFullScreen (props: Props): React.ReactElement | null {
+function LoadingFullScreen(props: Props): React.ReactElement | null {
   const { isLoading } = props;
-  if (isLoading)
+  if (isLoading) {
     return (
       <div className="loading-screen">
         <h1>Cargando ...</h1>
         <SettingFilled spin />
       </div>
     );
+  }
   return null;
 }
 

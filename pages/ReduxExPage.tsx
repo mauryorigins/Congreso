@@ -1,11 +1,11 @@
 // ---Dependencys
-import { ReactElement } from 'react'
-import Head from 'next/head'
+import { ReactElement } from 'react';
+import Head from 'next/head';
 // ---Components
 import ReduxEx from 'Cont/ReduxEx';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function ReduxExPage (): ReactElement {
+export default function ReduxExPage(): ReactElement {
   return (
     <>
       <Head>

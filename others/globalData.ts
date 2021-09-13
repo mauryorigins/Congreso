@@ -1,7 +1,7 @@
 // ---Dependencys
-const path = require("path");
+const path = require('path');
 
-export const absPath= path.resolve(__dirname)
-export const imagesPath= path.resolve(__dirname, './images')
+export const absPath = path.resolve(__dirname);
+export const imagesPath = path.resolve(__dirname, './images');
 
-export default null
+export default null;

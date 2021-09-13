@@ -7,7 +7,7 @@ const path = require("path");
 
 // Where your antd-custom.less file lives
 const themeVariables = lessToJS(
-  fs.readFileSync(path.resolve(__dirname, "./styles/antd-custom.less"), "utf8")
+  fs.readFileSync(path.resolve(__dirname, "./public/styles/colors.less"), "utf8")
 );
 
 // fix: prevents error when .less files are required by node

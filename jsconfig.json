@@ -15,7 +15,8 @@
       "@Declarations": ["./declarations.d.ts"],
       "Reducers": ["./redux/reducers"],
       "Types": ["./redux/types.ts"],
-      "Images/*": ["./public/images/*"]
+      "Images/*": ["./public/images/*"],
+      "Styles/*": ["./public/styles/*"]
     }
   }
 }

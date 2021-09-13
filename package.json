@@ -9,6 +9,7 @@
     "prod": "next build; next start"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.6.4",
     "@zeit/next-less": "^1.0.1",
     "antd": "^4.16.13",
     "less": "^4.1.1",

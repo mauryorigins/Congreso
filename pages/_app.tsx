@@ -5,8 +5,7 @@ import { AppProps } from 'next/app';
 // ---Containers
 import NavbarCont from 'Cont/NavbarCont';
 // ---Others
-import 'antd/dist/antd.less';
-import '../styles/main.less';
+import 'Styles/index.less';
 // ---Redux
 import { wrapper } from '@Redux/store';
 
