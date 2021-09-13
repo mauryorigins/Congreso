@@ -1,7 +1,7 @@
 // ---Dependencys
 import { combineReducers } from 'redux';
 // ---Types
-import {ReducerState as AppInfoState} from '@Reducers/appInfo/customTypes';
+import { ReducerState as AppInfoState } from '@Reducers/appInfo/customTypes';
 // ---Reducers
 import showFlagReducer from '@Reducers/showFlag';
 import appInfoReducer from '@Reducers/appInfo';
@@ -19,4 +19,4 @@ const rootReducer = combineReducers({
   appInfoReducer
 });
 
-export default  rootReducer
+export default rootReducer;

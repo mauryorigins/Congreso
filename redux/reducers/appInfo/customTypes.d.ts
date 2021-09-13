@@ -1,5 +1,5 @@
 // ---Types
-import { RandObj } from '@Declarations'
+import { RandObj } from '@Declarations';
 
 export interface Action {
   type: string;

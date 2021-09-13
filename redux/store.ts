@@ -1,5 +1,5 @@
 import {
-  createStore, applyMiddleware, compose, Store, AnyAction,
+  createStore, applyMiddleware, compose, Store, AnyAction
 } from 'redux';
 import thunk from 'redux-thunk';
 import { createWrapper, MakeStore } from 'next-redux-wrapper';
@@ -18,6 +18,6 @@ if (typeof window !== 'undefined') {
 // ---Redux configuration
 const makeStore = () => createStore(rootReducer, composeEnhancers(applyMiddleware(...middleware)));
 
-export const wrapper = createWrapper(makeStore as unknown as MakeStore<Store<any, AnyAction>>);
+export const wrapper = createWrapper(makeStore as unknown as MakeStore<Store<unknown, AnyAction>>);
 
 export default null;

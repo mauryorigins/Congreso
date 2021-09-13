@@ -4,7 +4,7 @@ import { MenuFoldOutlined, MenuOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import { Row, Col } from 'antd';
 // ---Others
-import { appConfig } from 'Others/store-config';
+import { appConfig } from 'Others/global-config';
 
 // ---AUX COMPONENTS
 interface AuxProps1 {

@@ -3,10 +3,10 @@ import {
   UPDATE_PARAMS,
   CHANGE_RESPONSIVE,
   UPDATE_PATH,
-  UPDATE_LOADING,
+  UPDATE_LOADING
 } from 'Types';
-import { Dispatch } from 'redux'
-import { RandObj } from '@Declarations'
+import { Dispatch } from 'redux';
+import { RandObj } from '@Declarations';
 // -------------------------------------------ACTIONS------------------------------------
 export const changeResponsiveFlag = (newFlag: boolean) => (dispatch: Dispatch) : void => {
   dispatch({

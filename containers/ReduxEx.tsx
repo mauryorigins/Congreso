@@ -3,6 +3,8 @@ import { ReactElement } from 'react';
 import { useSelector } from 'react-redux';
 // ---Types
 import { ReduxState } from 'Reducers';
+// ---CommonComps
+import GoBack from 'CComps/GoBack';
 
 // ----------------------------------------COMPONENT----------------------------------------
 export default function AntdEx(): ReactElement {
@@ -19,6 +21,7 @@ export default function AntdEx(): ReactElement {
         appInfoReducer:
         <pre>{JSON.stringify(appInfoReducer)}</pre>
       </p>
+      <GoBack />
     </div>
   );
 }

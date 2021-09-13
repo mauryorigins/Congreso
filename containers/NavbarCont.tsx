@@ -1,5 +1,5 @@
 // ---Dependencys
-import React, { useEffect } from 'react';
+import { useEffect, ReactElement } from 'react';
 import { useRouter } from 'next/router';
 // ---Redux
 import { useSelector, useDispatch } from 'react-redux';
@@ -15,7 +15,7 @@ import GlobalComponents from 'Comp/NavBar/GlobalComponents';
 import isMovilDetector from 'Others/isMovilDetector';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function NavbarCont() {
+export default function NavbarCont(): ReactElement {
   const { pathname: currentPath, query: urlParams } = useRouter();
   // Redux States
   const { isMovil } = useSelector((reducers: ReduxState) => reducers.appInfoReducer);

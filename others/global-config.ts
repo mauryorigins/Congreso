@@ -16,27 +16,6 @@ export const ownerData = {
 };
 
 export const appConfig = {
-  productsURL: 'categoria=Todos',
-  categorias: [
-    {
-      label: 'Videojuegos',
-      value: 'Videojuegos'
-    },
-    {
-      label: 'Dulces',
-      value: 'Dulces'
-    },
-    {
-      label: 'Computo',
-      value: 'Computo'
-    },
-    {
-      label: 'Celular',
-      value: 'Celular'
-    },
-    {
-      label: 'Sublimado',
-      value: 'Sublimado'
-    }
-  ]
+  // productsURL: '?categoria=Todos'
+  productsURL: ''
 };

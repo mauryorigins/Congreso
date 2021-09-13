@@ -1,5 +1,5 @@
 import { INVERT_FLAG } from 'Types';
-import { Action, ReducerState } from './customTypes'
+import { Action, ReducerState } from './customTypes';
 
 const INITIAL_STATE = {
   showImg: false
