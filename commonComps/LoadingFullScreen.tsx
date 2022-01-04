@@ -1,5 +1,5 @@
 // ---Dependencys
-import React from 'react';
+import { ReactElement } from 'react';
 import { SettingFilled } from '@ant-design/icons';
 
 // ------------------------------------------ TYPES-----------------------------------------
@@ -7,7 +7,7 @@ interface Props {
   isLoading: boolean;
 }
 // ------------------------------------------ COMPONENT-----------------------------------------
-function LoadingFullScreen(props: Props): React.ReactElement | null {
+function LoadingFullScreen(props: Props): ReactElement | null {
   const { isLoading } = props;
   if (isLoading) {
     return (

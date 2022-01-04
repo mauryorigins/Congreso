@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 // ---Components
-import ReduxEx from 'Cont/ReduxEx';
+import ReduxEx from 'Cont/ReduxEx/ReduxExCont';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
 export default function ReduxExPage(): ReactElement {

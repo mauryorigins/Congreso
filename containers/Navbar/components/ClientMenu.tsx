@@ -3,8 +3,6 @@ import React, { useState, ReactElement } from 'react';
 import { MenuFoldOutlined, MenuOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import { Row, Col } from 'antd';
-// ---Others
-import { appConfig } from 'Others/global-config';
 
 // ---AUX COMPONENTS
 interface AuxProps1 {
@@ -24,7 +22,7 @@ function JustButtons(props: AuxProps1) {
         </Link>
       </Col>
       <Col xs={24} sm={24} lg={5}>
-        <Link href={`/AntdExPage?${appConfig.productsURL}`}>
+        <Link href="/AntdExPage">
           <div
             className={
               currentPath === '/AntdExPage' ? 'nav-btn nav-border' : 'nav-btn'

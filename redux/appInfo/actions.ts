@@ -4,14 +4,16 @@ import {
   CHANGE_RESPONSIVE,
   UPDATE_PATH,
   UPDATE_LOADING
-} from 'Types';
+} from '@Redux/appInfo/types';
 import { Dispatch } from 'redux';
 import { RandObj } from '@Declarations';
+import { ResponsiveData } from '@Redux/appInfo/customTypes';
+
 // -------------------------------------------ACTIONS------------------------------------
-export const changeResponsiveFlag = (newFlag: boolean) => (dispatch: Dispatch) : void => {
+export const changeResponsiveFlag = (data: ResponsiveData) => (dispatch: Dispatch) : void => {
   dispatch({
     type: CHANGE_RESPONSIVE,
-    payload: newFlag
+    payload: data
   });
 };
 

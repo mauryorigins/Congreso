@@ -24,40 +24,15 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "resolveJsonModule": true,
     "paths": {
-      "Comp/*": [
-        "./components/*"
-      ],
-      "Cont/*": [
-        "./containers/*"
-      ],
-      "Pages/*": [
-        "./pages/*"
-      ],
-      "CComps/*": [
-        "./commonComps/*"
-      ],
-      "Utils/*": [
-        "./cUtils/*"
-      ],
-      "Others/*": [
-        "./others/*"
-      ],
-      "Actions/*": [
-        "./redux/actions/*"
-      ],
-      "@Reducers/*": [
-        "./redux/reducers/*"
-      ],
+      "Cont/*": ["./containers/*"],
+      "Pages/*": ["./pages/*"],
+      "CComps/*": ["./commonComps/*"],
+      "Utils/*": ["./cUtils/*"],
+      "Others/*": ["./others/*"],
+      "Requests/*": ["./requests/*"],
+      "AppConfig/*": ["./appConfig/*"],
       "@Redux/*": ["./redux/*"],
-      "@Declarations": [
-        "./declarations.d.ts"
-      ],
-      "Reducers": [
-        "./redux/reducers"
-      ],
-      "Types": [
-        "./redux/types.ts"
-      ],
+      "@Declarations": ["./declarations.d.ts"],
       "Images/*": ["./public/images/*"],
       "Styles/*": ["./public/styles/*"]
     }

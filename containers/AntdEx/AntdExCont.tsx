@@ -1,7 +1,7 @@
 // ---Dependencys
 import { ReactElement } from 'react';
 // ---Components
-import ToggleStuff from 'Comp/AntdEx/ToggleStuff';
+import ToggleStuff from 'Cont/AntdEx/components/ToggleStuff';
 // ---CommonComps
 import GoBack from 'CComps/GoBack';
 

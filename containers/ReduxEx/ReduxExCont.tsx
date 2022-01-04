@@ -2,7 +2,7 @@
 import { ReactElement } from 'react';
 import { useSelector } from 'react-redux';
 // ---Types
-import { ReduxState } from 'Reducers';
+import { ReduxState } from '@Redux/globalReducers';
 // ---CommonComps
 import GoBack from 'CComps/GoBack';
 

@@ -2,9 +2,9 @@
 import React from 'react';
 // --- Redux
 import { useSelector } from 'react-redux';
-import { ReduxState } from 'Reducers';
-// ---Components
-import LoadingFullScreen from 'Comp/NavBar/LoadingFullScreen';
+import { ReduxState } from '@Redux/globalReducers';
+// ---CommonComps
+import LoadingFullScreen from 'CComps/LoadingFullScreen';
 
 // -----------------------------------------COMPONENT-----------------------
 
