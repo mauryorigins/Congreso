@@ -7,7 +7,7 @@ import { Col, Row, Button } from 'antd';
 // ----------------------------------------COMPONENT----------------------------------------
 export default function InputPre(): ReactElement {
   return (
-    <Row>
+    <Row className="input-section">
       <Col xs={24} sm={24} md={24} lg={18} xl={18}>
         <input type="text" placeholder="Nombre" />
         <input type="text" placeholder="Celular" />
