@@ -1,67 +1,28 @@
+/* eslint-disable max-len */
 // ---Dependencys
-import { ReactElement, useState } from 'react';
-import {
-  Button, Row, Col, Statistic
-} from 'antd';
-import { CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons';
-
-// ---AUX COMPONENTS
-function Show() {
-  return (
-    <>
-      <CheckCircleOutlined />
-      {' '}
-      Show data
-    </>
-  );
-}
-function Hide() {
-  return (
-    <>
-      <CloseCircleOutlined />
-      {' '}
-      Hide Data
-    </>
-  );
-}
-
-function CoolData() {
-  return (
-    <Row className="cool-data" gutter={16}>
-      <Col span={12}>
-        <Statistic title="Active Users" value={112893} />
-      </Col>
-      <Col span={12}>
-        <Statistic title="Account Balance (CNY)" value={112893} precision={2} />
-        <Button style={{ marginTop: 16 }} type="primary">
-          Recharge
-        </Button>
-      </Col>
-      <Col span={12}>
-        <Statistic title="Active Users" value={112893} loading />
-      </Col>
-    </Row>
-  );
-}
+import { ReactElement } from 'react';
+import { Row, Col } from 'antd';
+// ---Components
+import TwinButtons from 'Cont/CIDT/components/TwinButtons';
 
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Content(): ReactElement {
-  const [flag, setFlag] = useState(false);
   return (
-    <>
-      <section>
+    <Row className="text-cont">
+      <Col span={24}>
+        <h1>Acerca Del Congreso</h1>
+        <hr />
         <p>
-          <strong>Antd</strong>
-          {' '}
-          with custom colors working
+          El curso esta dirigido a abogados, contadores, administradores y economistas que estudian u operan desde diversos enfoques, las proble4maticas de la relacion tributaria.
+          <br />
+          El objetivo principal es realizar un estado de la cuestion sobre las relaciones tributarias y su problematica actual, asi como inducir la reflexion y critica ed los sistemas actuales para concluir con algunas propuestas en cada segmento.
+          <br />
+          El congreso seria de dos maneras Presencial y Digital en aula virtual UNAM.
         </p>
-        <div>
-          <Button type="primary" onClick={() => setFlag(!flag)}>
-            {flag ? <Hide /> : <Show />}
-          </Button>
-        </div>
-        {flag && <CoolData />}
-      </section>
-    </>
+      </Col>
+      <Col span={24}>
+        <TwinButtons />
+      </Col>
+    </Row>
   );
 }
