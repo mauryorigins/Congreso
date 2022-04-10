@@ -13,6 +13,6 @@ export default function NavbarCont(): ReactElement {
   const { isMovil, currentPath } = useSelector((reducers: ReduxState) => reducers.appInfoReducer);
 
   return (
-    <ClientMenu currentPath={currentPath} isMovil={isMovil} logo="/images/logoStoreL.png" />
+    <ClientMenu currentPath={currentPath} isMovil={isMovil} />
   );
 }

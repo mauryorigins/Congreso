@@ -12,7 +12,7 @@ function JustButtons(props: AuxProps1) {
   const { currentPath } = props;
   return (
     <>
-      <Col xs={24} sm={24} lg={5}>
+      <Col xs={24} sm={24} md={24} lg={4} xl={4}>
         <Link href="/">
           <div
             className={currentPath === '/' ? 'nav-btn nav-border' : 'nav-btn'}
@@ -21,25 +21,47 @@ function JustButtons(props: AuxProps1) {
           </div>
         </Link>
       </Col>
-      <Col xs={24} sm={24} lg={5}>
+      <Col xs={24} sm={24} md={24} lg={4} xl={4}>
         <Link href="/AntdExPage">
           <div
             className={
               currentPath === '/AntdExPage' ? 'nav-btn nav-border' : 'nav-btn'
             }
           >
-            Antd example
+            CIDT
           </div>
         </Link>
       </Col>
-      <Col xs={24} sm={24} lg={5}>
+      <Col xs={24} sm={24} md={24} lg={4} xl={4}>
         <Link href="/ReduxExPage">
           <div
             className={
               currentPath === '/ReduxExPage' ? 'nav-btn nav-border' : 'nav-btn'
             }
           >
-            Redux example
+            PROGRAMA
+          </div>
+        </Link>
+      </Col>
+      <Col xs={24} sm={24} md={24} lg={4} xl={4}>
+        <Link href="/ReduxExPage">
+          <div
+            className={
+              currentPath === '/ReduxExPage' ? 'nav-btn nav-border' : 'nav-btn'
+            }
+          >
+            PONENTES
+          </div>
+        </Link>
+      </Col>
+      <Col xs={24} sm={24} md={24} lg={4} xl={4}>
+        <Link href="/ReduxExPage">
+          <div
+            className={
+              currentPath === '/ReduxExPage' ? 'nav-btn nav-border' : 'nav-btn'
+            }
+          >
+            INSCRIPCION
           </div>
         </Link>
       </Col>
@@ -49,12 +71,11 @@ function JustButtons(props: AuxProps1) {
 // ------------------------------------------ TYPES-----------------------------------------
 interface Props {
   isMovil: boolean;
-  logo: string;
   currentPath: string;
 }
 // ------------------------------------------ COMPONENT-----------------------------------------
 function ClientMenu(props: Props) : ReactElement {
-  const { isMovil, logo, currentPath } = props;
+  const { isMovil, currentPath } = props;
   const [menuVisible, setMenuVisible] = useState(false);
 
   function changeMenuVisibility() {
@@ -63,15 +84,6 @@ function ClientMenu(props: Props) : ReactElement {
   if (isMovil) {
     return (
       <Row className="nav-div">
-        <Col xs={24} sm={24} lg={8}>
-          <Link href="/" passHref>
-            <div className="to-home">
-              <a href="replace">
-                <img src={logo} alt="Shelly" width="100%" />
-              </a>
-            </div>
-          </Link>
-        </Col>
         <Col xs={24} sm={24} lg={16}>
           <Row>
             <Col xs={24} sm={24} lg={5}>
@@ -92,14 +104,7 @@ function ClientMenu(props: Props) : ReactElement {
   }
   return (
     <Row className="nav-div">
-      <Col xs={24} sm={24} lg={8}>
-        <Link href="/">
-          <div className="to-home">
-            <img src={logo} alt="Shelly" width="100%" />
-          </div>
-        </Link>
-      </Col>
-      <Col xs={24} sm={24} lg={16}>
+      <Col xs={24} sm={24} lg={24}>
         <Row>
           <JustButtons currentPath={currentPath} />
         </Row>
