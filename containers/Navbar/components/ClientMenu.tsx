@@ -22,10 +22,10 @@ function JustButtons(props: AuxProps1) {
         </Link>
       </Col>
       <Col xs={24} sm={24} md={24} lg={4} xl={4}>
-        <Link href="/AntdExPage">
+        <Link href="/CIDTPage">
           <div
             className={
-              currentPath === '/AntdExPage' ? 'nav-btn nav-border' : 'nav-btn'
+              currentPath === '/CIDTPage' ? 'nav-btn nav-border' : 'nav-btn'
             }
           >
             CIDT
@@ -33,10 +33,10 @@ function JustButtons(props: AuxProps1) {
         </Link>
       </Col>
       <Col xs={24} sm={24} md={24} lg={4} xl={4}>
-        <Link href="/ReduxExPage">
+        <Link href="/ProgramaPage">
           <div
             className={
-              currentPath === '/ReduxExPage' ? 'nav-btn nav-border' : 'nav-btn'
+              currentPath === '/ProgramaPage' ? 'nav-btn nav-border' : 'nav-btn'
             }
           >
             PROGRAMA
@@ -44,10 +44,10 @@ function JustButtons(props: AuxProps1) {
         </Link>
       </Col>
       <Col xs={24} sm={24} md={24} lg={4} xl={4}>
-        <Link href="/ReduxExPage">
+        <Link href="/PonentesPage">
           <div
             className={
-              currentPath === '/ReduxExPage' ? 'nav-btn nav-border' : 'nav-btn'
+              currentPath === '/PonentesPage' ? 'nav-btn nav-border' : 'nav-btn'
             }
           >
             PONENTES
@@ -55,10 +55,10 @@ function JustButtons(props: AuxProps1) {
         </Link>
       </Col>
       <Col xs={24} sm={24} md={24} lg={4} xl={4}>
-        <Link href="/ReduxExPage">
+        <Link href="/InscripcionPage">
           <div
             className={
-              currentPath === '/ReduxExPage' ? 'nav-btn nav-border' : 'nav-btn'
+              currentPath === '/InscripcionPage' ? 'nav-btn nav-border' : 'nav-btn'
             }
           >
             INSCRIPCION
