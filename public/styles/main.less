@@ -1,5 +1,4 @@
 @import: './colors.less';
-
 //----------------------------------------------Nav-----------------------------------------------
 .nav-div{
   width: 100%;
@@ -38,37 +37,92 @@
 }
 /*----------------------------------------HOME-------------------------------------*/
 .home-container{
-  text-align: center;
-}
-.home-container img{
-  border-radius: 50%;
-}
-.home-container h1{
-  color: @colorPrimary;
-}
-/*----------------------------------------ANTD-EX-------------------------------------*/
-.antdEx-container{
-  width: 94%;
-  margin: 0px auto 0px auto;
-  padding: 25px;
-  background-color: @colorTransparentGrey;
-  button{
-    margin: 30px;
-  }
-}
-/*----------------------------------------REDUX-EX-------------------------------------*/
-.reduxEx-container{
-  width: 94%;
-  margin: 0px auto 0px auto;
-  padding: 25px;
-  background-color: @colorTransparentGrey;
-  p{
-    color: @colorPrimaryText;
-    strong{
-      color: @colorSecundaryText;
+  .titulo{
+    .cidt{
+      p{
+        font-size: 500%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        //background-color: red;
+        text-align:center;
+        color: white;
+        border: 5px solid;
+        margin: 40px;
+        letter-spacing: 40mm;
+      }
+      //background-color: yellow;
+      //border: 3px solid black;
+    }
+    .congreso{
+        font-size: 300px;
+        //background-color: blue;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:@colorPrimaryLigth;
+        p{
+          color:@colorTextCongres;
+          font-size: 50px;
+        }
+        padding: auto;
+        margin: auto;
     }
   }
-  pre{
-    color: @colorSecundaryText;
+  .escuelas{
+    p{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color:@colorTextCongres;
+      font-size: 50px;
+      text-align: center;
+    }
+  }
+  .contenido{
+    p{
+      font-size: 25px;
+      color: white;
+      text-align: center;
+      margin-left:300px;
+      margin-right:300px;
+    }
+  }
+  .icono-mapa{
+    img{
+      display: block;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+    }
+    h1{
+      text-align: center;
+    }
+  }
+  
+  .icono-calendario{
+    img{
+      display: block;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+    }
+    h1{
+      text-align: center;
+    }
+  }
+  .imgRandom{
+    text-align: center;
+  }
+  .fb{
+    img{
+      display: block;
+      margin: auto;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .tl{
+    img{
+      display: block;
+      margin: auto;
+      width: 50px;
+      height: 50px;
+    }
   }
 }
