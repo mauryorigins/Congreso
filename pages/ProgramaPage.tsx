@@ -9,7 +9,7 @@ export default function ProgramaPage(): ReactElement {
   return (
     <>
       <Head>
-        <title>REDUX Example</title>
+        <title>Programa</title>
       </Head>
       <ProgramaCont />
     </>

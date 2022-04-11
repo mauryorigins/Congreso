@@ -8,7 +8,7 @@ export default function HomePage(): ReactElement {
   return (
     <>
       <Head>
-        <title>INICIO</title>
+        <title>Inicio</title>
       </Head>
       <Home />
     </>
