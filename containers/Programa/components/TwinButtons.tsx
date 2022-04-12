@@ -11,7 +11,7 @@ interface Props {
 export default function TwinButtons(props:Props): ReactElement {
   const { ButtonState19, ButtonState20 } = props;
   return (
-    <Row>
+    <Row className="TwinButtons">
       <Col xs={24} sm={24} md={12} lg={12} xl={12}>
         <Button onClick={ButtonState19}>19 Mayo 2022</Button>
       </Col>
