@@ -3,10 +3,11 @@ export const dataDay19 = [
     initHrs: '10:15',
     endHrs: '10:30',
     evento: 'Bienvenida y apertura del congreso',
-    participante: 'Dra Maria Guadalupe Hernandez Ruiz \n Mtro Ambrosio Michel Higuera \n Dra Rosa Carmen Gasccon Gasca'
+    participante: 'Dra Maria Guadalupe Hernandez Ruiz,\n Mtro Ambrosio Michel Higuera,\n Dra Rosa Carmen Gasccon Gasca'
   },
   {
-    titulo: 'Panel UNO Modera: Rogelio Rodriguez Garduño',
+    tituloBold: 'Panel UNO',
+    titulo: 'Modera: Rogelio Rodriguez Garduño',
     initHrs: '10:30',
     endHrs: '11:00',
     evento: 'Economia digitalizada y recudaciones BEPS',
@@ -26,7 +27,8 @@ export const dataDay19 = [
   },
   {
     breakTime: 'Coffe Break',
-    titulo: 'Panel DOS Modera: Joel Mora Vazquez',
+    tituloBold: 'Panel DOS',
+    titulo: 'Modera: Joel Mora Vazquez',
     initHrs: '12:30',
     endHrs: '13:00',
     evento: 'Gobierno corporativo y tax compliance',
@@ -46,7 +48,8 @@ export const dataDay19 = [
   },
   {
     breakTime: 'Comida',
-    titulo: 'Panel TRES Modera: Manuel de Allende',
+    tituloBold: 'Panel TRES',
+    titulo: 'Modera: Manuel de Allende',
     initHrs: '16:00',
     endHrs: '16:30',
     evento: 'Seguridad Juridica Tributaria en el contexto digital',
@@ -79,7 +82,8 @@ export const dataDay19 = [
 ];
 export const dataDay20 = [
   {
-    titulo: 'Panel UNO Modera: Rogelio Ibarra',
+    tituloBold: 'Panel UNO',
+    titulo: 'Modera: Rogelio Ibarra',
     initHrs: '14:00',
     endHrs: '14:30',
     evento: 'Entorno economico y analisis cuantitativo de la recaudacion en Mexico',
@@ -99,7 +103,8 @@ export const dataDay20 = [
   },
   {
     breakTime: 'Coffe Break',
-    titulo: 'Panel DOS Modera: Gema Ayecac',
+    tituloBold: 'Panel UNO',
+    titulo: 'Modera: Gema Ayecac',
     initHrs: '16:00',
     endHrs: '16:30',
     evento: 'Politica Penal Tributaria en Mexico',
