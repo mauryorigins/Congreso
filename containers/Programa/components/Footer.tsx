@@ -1,6 +1,7 @@
 // ---Dependencys
 import { ReactElement } from 'react';
-import { Col, Row } from 'antd';
+import { Col, Row, Button } from 'antd';
+import Link from 'next/link';
 
 // ----------------------------------------COMPONENT----------------------------------------
 export default function Footer(): ReactElement {
@@ -14,6 +15,9 @@ export default function Footer(): ReactElement {
           <br />
           de Derecho Tributario
         </h1>
+        <Link href="/InscripcionPage">
+          <Button>INSCRIPCION</Button>
+        </Link>
       </Col>
       <Col>
         <p>
@@ -30,7 +34,7 @@ export default function Footer(): ReactElement {
           SOLICITUD DE CONSTACIA DIGITAL
         </p>
       </Col>
-      <Col>
+      <Col className="cidt-footer">
         <span>CIDT</span>
       </Col>
     </Row>
