@@ -2,16 +2,16 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 // ---Components
-import AntdEx from 'Cont/AntdEx/AntdExCont';
+import InscripcionCont from 'Cont/Inscripcion/InscripcionCont';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function AntdExPage(): ReactElement {
+export default function InscripcionPage(): ReactElement {
   return (
     <>
       <Head>
-        <title>ANTD Example</title>
+        <title>Pre-Registro</title>
       </Head>
-      <AntdEx />
+      <InscripcionCont />
     </>
   );
 }
