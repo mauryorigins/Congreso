@@ -7,6 +7,9 @@ import GoBack from 'CComps/GoBack';
 import ProgramList from 'Cont/Programa/components/ProgramList';
 import ProgramTop from 'Cont/Programa/components/ProgramTop';
 import TwinButtons from 'Cont/Programa/components/TwinButtons';
+import Cuota from 'Cont/Programa/components/Cuota';
+import Footer from 'Cont/Programa/components/Footer';
+
 // ---Others
 import { dataDay19, dataDay20 } from 'Others/dataProgram';
 
@@ -65,6 +68,8 @@ export default function AntdEx(): ReactElement {
             />
           ))
 }
+        <Cuota />
+        <Footer />
       </Row>
       <div>
         <GoBack />
