@@ -1,9 +1,16 @@
 @import: './colors.less';
+//----------------------------------------------Body----------------------------------------------
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size:16px
+}
 //----------------------------------------------Nav-----------------------------------------------
 .nav-div{
   width: 100%;
   margin-bottom: 35px;
 }
+/*
 .to-home{
   display: block;
   margin: 10px auto 10px auto ;
@@ -13,9 +20,9 @@
   font-size: 30px;
   cursor: pointer;
   span{
-    font-size: 14px;
+    //font-size: 14px;
   }
-}
+}*/
 .nav-btn{
   width: 98%;
   background-color: @colorNavButtons;
@@ -39,90 +46,129 @@
 .home-container{
   .titulo{
     .cidt{
-      p{
-        font-size: 500%;
+        p{
+          font-size: 5em;
+          text-align:center;
+          border: 5px solid;
+          margin: 20px 30px;
+          word-spacing: 5rem;
+        }
+        text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        //background-color: red;
-        text-align:center;
-        color: white;
-        border: 5px solid;
-        margin: 40px;
-        letter-spacing: 40mm;
-      }
-      //background-color: yellow;
-      //border: 3px solid black;
+        justify-content: center;
     }
     .congreso{
-        font-size: 300px;
-        //background-color: blue;
         text-align: center;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color:@colorPrimaryLigth;
+        margin: auto;
         p{
           color:@colorTextCongres;
-          font-size: 50px;
+          font-size: 4em;
         }
-        padding: auto;
-        margin: auto;
     }
   }
   .escuelas{
     p{
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color:@colorTextCongres;
-      font-size: 50px;
+      font-size: 4em;
       text-align: center;
     }
   }
   .contenido{
     p{
-      font-size: 25px;
+      font-size:2em;
       color: white;
       text-align: center;
-      margin-left:300px;
-      margin-right:300px;
+      margin:10px 100px;
     }
   }
   .icono-mapa{
+    text-align:end;
     img{
-      display: block;
-      margin: auto;
-      width: 100px;
-      height: 100px;
-    }
-    h1{
-      text-align: center;
+      margin: 25px 0px;
+      width: 6em;
+      height: 6em;
     }
   }
-  
+  .texto-mapa{
+    text-align:left;
+    h1{
+      padding: 0.5em;
+      margin: 25px;
+      font-size:2em;
+    }
+  }
   .icono-calendario{
+    text-align:end;
     img{
-      display: block;
-      margin: auto;
-      width: 100px;
-      height: 100px;
-    }
-    h1{
-      text-align: center;
+      margin: 25px 0px;
+      width: 6em;
+      height: 6em;
     }
   }
-  .imgRandom{
-    text-align: center;
+  .texto-calendario{
+    text-align:justify;
+    h1{
+      margin: 25px;
+      font-size:2em;
+      text-align: justify;
+    }
   }
   .fb{
     img{
       display: block;
       margin: auto;
-      width: 50px;
-      height: 50px;
+      width: 4em;
+      height: 4em;
+    }
+  }
+  .gaceta{
+    img{
+      display: block;
+      margin: auto;
+      width: 5em;
+      height: 2em;
     }
   }
   .tl{
     img{
       display: block;
       margin: auto;
-      width: 50px;
-      height: 50px;
+      width: 4em;
+      height: 4em;
     }
+  }
+}
+@media(max-width:1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media(max-width:992px) {
+  body {
+    font-size:  12px;
+  }
+}
+@media(max-width:768px) {
+  body {
+    font-size: 10px;
+  }
+  .cidt{
+    font-size: 0.45em;
+  }
+}
+@media(max-width:576px) {
+  body {
+    font-size: 8px;
+  }
+  .cidt{
+    font-size: 0.35em;
+  }
+  .texto-mapa{
+    font-size: 0.75em
+  }
+  .texto-calendario{
+    font-size: 0.75em;
   }
 }
