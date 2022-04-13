@@ -7,17 +7,17 @@ import Footer from './Footer';
 export default function Content(): ReactElement {
   return (
     <Row>
-      <Col span={8} className="escuelas">
+      <Col xs={24} sm={24} md={8} lg={8} xl={8} xxl={8} className="escuelas">
       <p>
         UCM 
       </p>
     </Col>
-    <Col span={8} className="escuelas">
+    <Col xs={24} sm={24} md={8} lg={8} xl={8} xxl={8} className="escuelas">
       <p>
         UNAM
       </p>
     </Col>
-    <Col span={8} className="escuelas">
+    <Col xs={24} sm={24} md={8} lg={8} xl={8} xxl={8} className="escuelas">
       <p>
         UBA
       </p>
@@ -28,14 +28,18 @@ export default function Content(): ReactElement {
         Induzcamos la reflexion y critica de los sistemas actuales para exponer alternativas actiales de relaciones cooperativa
       </p>
     </Col>
-    <Col span={12} className="icono-mapa">
+    <Col  xs={6} sm={6} md={6} lg={6} xl={6} xxl={6}  className="icono-mapa">
       <img src='\images\mapa.png'/>
-    <h1>CDMX - MEX</h1>
     </Col>
-    <Col span={12} className="icono-calendario">
-      <img src="\images\calendario.png"/>
-    <h1>19 y 20 de mayo 2022</h1>
+    <Col  xs={6} sm={6} md={6} lg={6} xl={6} xxl={6}  className="texto-mapa">
+      <h1>CDMX-MEX</h1>
+    </Col>
+    <Col  xs={6} sm={6} md={6} lg={6} xl={6} xxl={6}  className="icono-calendario">
+      <img src="\images\calendario.png" alt="19 y 20 de mayo 2022"/>
     </Col >
+    <Col  xs={6} sm={6} md={6} lg={6} xl={6} xxl={6}  className="texto-calendario">
+      <h1>19 y 20<br/> de mayo<br/>2022</h1>
+    </Col>
     </Row>
   );
 }

@@ -7,9 +7,9 @@ export default function Footer(): ReactElement {
             <Col span={8} className="fb">
         <img src="\images\facebook.png"/>
             </Col>
-            <Col span={8} className="imgRandom">
+            <Col span={8} className="gaceta">
             <h1>
-                Sello Random
+                <img src="\images\gaceta.jpg"/>
             </h1>
             </Col>
             <Col span={8} className="tl">
