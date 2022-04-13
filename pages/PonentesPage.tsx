@@ -2,16 +2,16 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
 // ---Components
-import ReduxEx from 'Cont/ReduxEx/ReduxExCont';
+import PonentesCont from 'Cont/Ponentes/PonentesCont';
 
 // ------------------------------------------ COMPONENT-----------------------------------------
-export default function ReduxExPage(): ReactElement {
+export default function PonentesPage(): ReactElement {
   return (
     <>
       <Head>
-        <title>REDUX Example</title>
+        <title>Ponentes</title>
       </Head>
-      <ReduxEx />
+      <PonentesCont />
     </>
   );
 }

@@ -1,16 +1,20 @@
 // ---Dependencys
 import { ReactElement } from 'react';
+import { Row } from 'antd';
 // ---Components
-import ToggleStuff from 'Cont/AntdEx/components/ToggleStuff';
+import ToggleStuff from 'Cont/CIDT/components/ToggleStuff';
+import LogosSection from 'Cont/CIDT/components/LogosSection';
+
 // ---CommonComps
 import GoBack from 'CComps/GoBack';
 
 // ----------------------------------------COMPONENT----------------------------------------
 export default function AntdEx(): ReactElement {
   return (
-    <div className="antdEx-container">
+    <Row className="CIDT-container">
+      <LogosSection />
       <ToggleStuff />
       <GoBack />
-    </div>
+    </Row>
   );
 }
