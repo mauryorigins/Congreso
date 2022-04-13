@@ -1,4 +1,3 @@
-/* eslint-disable react/require-default-props */
 // ---Dependencys
 import { ReactElement } from 'react';
 import { Col, Row } from 'antd';
