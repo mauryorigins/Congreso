@@ -221,8 +221,8 @@
   .top-list {
     padding-left: 10%;
     height: 8%;
-    .title{
-      h1{
+    .title {
+      h1 {
         border: white solid 3px;
         margin: 5px;
         padding: 10px 5px;
@@ -230,11 +230,11 @@
         font-size: 40px;
         width: max-content;
         color: #ffb935;
-        background:none;
+        background: none;
         border-radius: 0px;
         letter-spacing: 15px;
       }
-      h2{
+      h2 {
         color: #ffb935;
         font-size: 30px;
         text-align: center;
@@ -314,7 +314,7 @@
         }
       }
     }
-    &-even{
+    &-even {
       table {
         tr {
           td {
@@ -325,5 +325,38 @@
         }
       }
     }
+  }
+  .cuota {
+    background-color: #ffb935;
+    h1 {
+      color: #1e3f6c;
+      font-size: 40px;
+      max-width: 50%;
+      text-align: center;
+      margin: auto;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    table {
+      font-weight: bold;
+      color: #1e3f6c;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 35px;
+      tr {
+        &:nth-child(odd) {
+          td {
+            color: white;
+          }
+        }
+      }
+      td {
+        width: 400px;
+      }
+    }
+  }
+  .footer-programa{
+    background: linear-gradient(0deg, rgba(27,57,95,1) 5%, rgba(255,255,255,1) 100%);
   }
 }
