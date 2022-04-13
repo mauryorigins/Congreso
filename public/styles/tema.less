@@ -16,20 +16,24 @@ button, input[type="submit"], input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  }
-
+}
   html,
   body {
-    background-color: @backgroundFallBack1;
-    background: @backgroundImage1 no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: @backgroundUnam no-repeat center center fixed;
     background-size: cover;
     font-family: 'Questrial';
     margin: 0px;
     padding: 0px;
   }
+  body:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+//    background-image: linear-gradient(#000590e2,#1c629c,#dbead7);
+    position: fixed;
+    opacity: 0.9; 
+  }
+  /*
   p{
     color: @colorSecundaryText;
     font-size: 18px;
@@ -39,8 +43,9 @@ button, input[type="submit"], input[type="reset"] {
     font-weight: bold;
     margin: 0px 3px 0px 3px;
   }
-  }
+}*/
   /*-------------------------------------UTILITY STYLES----------------------------------*/
+  /*
   .center-block{
   display: flex;
   align-items: center;
@@ -51,25 +56,8 @@ button, input[type="submit"], input[type="reset"] {
   align-items: center;
   justify-content: center;
   width: 100%;
-  }
-  .text-green{
-  color: @simpleColorGreen;
-  }
-  .text-yellow{
-  color: @simpleColorYellow
-  }
-  .error-mid-mssg{
-  color: @colorError;
-  font-size: 18px;
-  }
-  .modal-title{
-  color: @colorError;
-  }
-  .modal-message{
-  font-size: 18px;
-  }
+  }*/
   .container94{
   width: 94%;
   margin: 10px 3% 10px 3%;
-  
   }
